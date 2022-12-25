@@ -1,0 +1,1 @@
+npx clear-npx-cache: cmd used to fix the error of being behind current version
