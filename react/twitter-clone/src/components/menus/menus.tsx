@@ -1,8 +1,12 @@
+import Modal from '../../Modal/Modal';
 import './menus.css';
+import {useState} from 'react';
 
-export default function menus() {
+const Menus = () => {
     const width = "30";
     const height = "30";
+
+    const [isOpen,setIsOpen] = useState(false);
     return (
 
     <div className="flex flex-col">
@@ -15,7 +19,7 @@ export default function menus() {
 
 
         <div className="text-white my-3 ml-28">
-            <div className="flex flex-row" onClick={()=>console.log("home")}>
+            <div className="flex flex-row hover:bg-violet-600 rounded-md" onClick={()=>console.log("home")}>
                 <button className="flex items-center">
                     <img src={require("./images/home.png")} alt="Home" width={width} height={height}/>
                     <div className="ml-4 order-1">Home</div>
@@ -78,13 +82,18 @@ export default function menus() {
 
         <div className="text-white my-3 ml-28">
             <div className="flex flex-row">
-                <button className="flex items-center" onClick={()=>console.log("More")}>
+                <button className="flex items-center" onClick={()=>setIsOpen(true)}>
                     <img src={require("./images/dots.png")} alt="More" width={width} height={height}/>
                     <div className="ml-4 order-1">More</div>
                 </button>
-                
+                <Modal open={isOpen} onClose={()=>setIsOpen(false)}>
+                    Hello 
+                </Modal>
             </div>
         </div>
     </div>
     )
 }
+
+
+export default Menus;
