@@ -2,6 +2,12 @@ import './menus.css';
 import {useState} from 'react';
 import Dropdown from '../Dropdown/Dropdown';
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+interface Props{
+    isOpen:false
+    setIsopen:()=>void
+}
+
 const Menus = () => {
     const width = "30";
     const height = "30";
@@ -78,7 +84,7 @@ const Menus = () => {
             </div>
         </div>
 
-        <div className="text-white my-3 ml-28 w-44" id="more">
+        <div className="text-white my-3 ml-28 w-44" >
             <div className="flex flex-row">
                 <button className="flex items-center hover:bg-grey-300 hover:opacity-25 rounded-md" onClick={()=>setIsOpen(!isOpen)}>
                     <img src={require("./images/dots.png")} alt="More" width={width} height={height}/>
@@ -87,6 +93,16 @@ const Menus = () => {
                 {isOpen && <Dropdown onClose={()=>setIsOpen(false)}/>}
             </div>
         </div>
+
+
+        <div className="flex text-white my-3 ml-28 w-52 h-14 bg-blue-400 rounded-full font-bold items-center justify-center hover:opacity-75">
+                Tweet
+        </div>
+
+        <div className="flex mt-auto text-white my-3 ml-28 w-44 h-14 bg-blue-400 rounded-full font-bold items-center justify-center hover:opacity-75">
+                Tweet
+        </div>
+
     </div>
     )
 }

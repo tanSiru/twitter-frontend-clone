@@ -1,7 +1,9 @@
 import './App.css';
 import Menu from '../src/components/menus/menus'
+import {useState} from 'react';
 
 function App() {
+  const [isOpen,setIsOpen] = useState(false);
   return (
     <div className="background flex flex-row w-screen">
       <div className="flex-none w-2/6 h-screen">
