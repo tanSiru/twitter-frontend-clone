@@ -5,3 +5,7 @@
 .right{
     order:1;
 }
+
+.circle-crop{
+    clip-path: circle();
+}

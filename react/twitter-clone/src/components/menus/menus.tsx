@@ -99,8 +99,10 @@ const Menus = () => {
                 Tweet
         </div>
 
-        <div className="flex mt-auto text-white my-3 ml-28 w-44 h-14 bg-blue-400 rounded-full font-bold items-center justify-center hover:opacity-75">
-                Tweet
+        <div className="flex text-white my-3 ml-28 w-44 h-14 bg-blue-400 rounded-full font-bold items-center justify-center absolute bottom-0 hover:opacity-75 flex-row">
+                <img src={require("./images/test.jpeg")} alt="monogatari" width="50" height="50" className="circle-crop"/>
+                Profile
+                {/* <div className="absolute top-0 right-0 h-4 w-4 my-1 border-2 border-white rounded-full bg-red-400 z-2"></div> */}
         </div>
 
     </div>
