@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
     position: fixed;
-    top:50%;
+    top:30%;
     left:50%;
     transform:translate(-50%, -50%);
     background-color: black;
@@ -22,5 +22,34 @@ export const Content = styled.div`
     display:flex;
     flex-direction: column;
     border-radius: 5%;
-    color:blue;
+    width:600px;
+    height:350px;
+`
+
+export const Button = styled.button`
+    margin-top: -25px;;
+    margin-left: -25px;
+    width:30px;
+    height:30px;
+    position: absolute;
+    color:white;
+    font-size: 16px;
+    border-radius: 9999px;
+    :hover{
+        background: rgba(255, 255, 255, .25) 
+    }
+    justify-items: center;
+    align-items:center;
+`
+
+export const Profile = styled.img`
+    clip-path: circle();
+    width:50px;
+    height:50px;
+    margin-left:-30px;
+`
+
+export const ProfileStuff = styled.div`
+    display:flex;
+    flex-direction: row;
 `

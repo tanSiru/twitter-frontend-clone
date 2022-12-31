@@ -1,6 +1,5 @@
-import { ReactNode } from 'react'
 import ReactDOM from 'react-dom'
-import {  Content, Wrapper } from './Modal.styled'
+import {  Button, Content, Profile, Wrapper } from './Modal.styled'
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 // interface Props{
@@ -14,10 +13,13 @@ export default function Modal({children,tweet,onClose}:any) {
 
     return ReactDOM.createPortal(
     <>
-    <Wrapper></Wrapper>
+    <Wrapper/>
         <Content>
-            <button onClick={onClose}>Close Modal</button>
+            <Button onClick={onClose}>X</Button>
             {children}
+            <Profile src={require('../menus/images/test.jpeg')}>
+                
+            </Profile>
         </Content>
     </>,
     document.getElementById('modal')!
