@@ -1,10 +1,11 @@
 import './menus.css';
 import {useState} from 'react';
 import Dropdown from '../Dropdown/Dropdown';
+import Modal from '../Modal/Modal';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface Props{
-    isOpen:false
+    isOpen:boolean
     setIsopen:()=>void
 }
 
@@ -13,6 +14,8 @@ const Menus = () => {
     const height = "30";
 
     const [isOpen,setIsOpen] = useState(false);
+    const [isTweet,setIsTweet] = useState(false);
+
     return (
 
     <div className="flex flex-col">
@@ -95,13 +98,29 @@ const Menus = () => {
         </div>
 
 
-        <div className="flex text-white my-3 ml-28 w-52 h-14 bg-blue-400 rounded-full font-bold items-center justify-center hover:opacity-75">
-                Tweet
+        <div className="flex text-white my-3 ml-28 w-52 h-14 bg-blue-400 rounded-full font-bold items-center justify-center hover:opacity-75" >
+            <button onClick={()=>setIsTweet(true)} className="h-full w-full rounded-full">
+                Tweet       
+            </button>
         </div>
 
-        <div className="flex text-white my-3 ml-28 w-44 h-14 bg-blue-400 rounded-full font-bold items-center justify-center absolute bottom-0 hover:opacity-75 flex-row">
-                <img src={require("./images/test.jpeg")} alt="monogatari" width="50" height="50" className="circle-crop"/>
-                Profile
+        <Modal tweet={isTweet} onClose={()=>setIsTweet(false)}>
+            Tweet stuff 
+        </Modal>
+
+        <div className="flex text-white my-3 ml-28 w-48 h-14 bg-blue-400 rounded-full font-bold items-center justify-center absolute bottom-0 hover:opacity-75 flex-row">
+                <img src={require("./images/test.jpeg")} alt="monogatari" width="50" height="50" className="circle-crop basis-1/4"/>
+                    <div className="flex flex-col basis-1/4">
+                        <div className="text-md">
+                            Phos
+                        </div>
+                        <div className="text-xs font-thin text-gray-700 font-serif">
+                            @_phosphophy
+                        </div>
+                    </div>
+                <div className="font-bold grow basis-1/2">
+                    ...
+                </div>
                 {/* <div className="absolute top-0 right-0 h-4 w-4 my-1 border-2 border-white rounded-full bg-red-400 z-2"></div> */}
         </div>
 
