@@ -55,6 +55,8 @@ export const ProfileStuff = styled.div`
 `
 
 export const Audience = styled.div`
+    display: flex;
+    flex-direction: row;
     margin-left:5px;
     width:125px;
     height:35px;
@@ -68,6 +70,10 @@ export const Audience = styled.div`
     text-align: center;
     vertical-align: middle;
     line-height: 25px;    
+    padding-left:20px;
+    :hover{
+        background: rgba(255, 255, 255, .25) 
+    }
 `
 
 export const TweetBox = styled.form`
@@ -82,11 +88,34 @@ export const Input = styled.textarea`
     :focus{
         outline-width: 0;
     }
-    color:red;
+    color:white;
     width:100%;
     height:100%;
     resize:none;
     display:flex;
     flex-wrap: wrap;
     justify-content: stretch;
+`
+
+export const Options =  styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    height:  120px;
+    padding-bottom: -15px;
+    flex-shrink:2;
+`
+
+export const Reply = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width:125px;
+    height:30px;
+    border-radius: 9999px;
+    color:lightblue;
+    :hover{
+        background-color: rgba(255,255,255,0.25);
+    }
 `
