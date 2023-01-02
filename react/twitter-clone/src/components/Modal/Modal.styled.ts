@@ -119,3 +119,62 @@ export const Reply = styled.div`
         background-color: rgba(255,255,255,0.25);
     }
 `
+
+export const Line = styled.hr`
+    height: 1px;
+    margin-top:10px;
+    background: black;
+`
+
+export const Media = styled.div`
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    .image{
+        width:35px;
+        height:37px;
+    }
+
+    .gif{
+        width:30px;
+        height:28px;
+        margin-top:5px;
+    }
+
+    .dots{
+        width:25px;
+        height:25px;
+        margin-top:7px;
+    }
+
+    .emoji{
+        width:28px;
+        height:28px;
+        margin-top:5px;
+    }
+    
+    .calender{
+        width:30px;
+        height:28px;
+        margin-top:5px;
+    }
+
+    .tweet{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 2px;
+        margin-left:auto;
+        margin-top: 7px;
+        width:120px;
+        height:35px;
+        color:white;
+        background-color:darkcyan;
+        :hover{
+            background-color: rgba(255,255,255,0.25);
+        }
+        border-radius:9999px;
+    }
+`
