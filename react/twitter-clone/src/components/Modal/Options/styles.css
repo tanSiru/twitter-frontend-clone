@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .close{
     width:30px;
     height:30px;
@@ -13,6 +14,6 @@
     align-items:center;
 }
 
-close:hover{
+.close:hover{
     background: rgba(255, 255, 255, .25) ;
 };

@@ -32,7 +32,7 @@ export default function Modal({tweet,onClose}:any) {
                 <Audience onClick={isEveryone===false ? ()=> setIsEveryone(true) :()=> setIsEveryone(false)}>
                     Everyone
                     <img src={require('../menus/images/downarrow.png')} alt="down arrow" width="10" height="10"/>
-                    {isEveryone && <Everyone onClose={()=>setIsEveryone(false)}/>}
+                    
                 </Audience>
             </ProfileStuff>
             <TweetBox>
@@ -57,6 +57,7 @@ export default function Modal({tweet,onClose}:any) {
                 </Media>
 
             </Options>
+            {isEveryone && <Everyone onClose={()=>setIsEveryone(false)}/>}
         </Content>
     </>,
     document.getElementById('modal')!
