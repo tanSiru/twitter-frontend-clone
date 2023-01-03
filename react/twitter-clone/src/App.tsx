@@ -1,5 +1,6 @@
 import './App.css';
 import Menu from '../src/components/menus/menus'
+import TweetBox from './components/TweetBox/TweetBox';
 
 function App() {
   return (
@@ -10,6 +11,10 @@ function App() {
       <div className="flex-none w-2/6 h-screen">
         <span className="left-line"/>
         <span className="right-line"/>
+        <div className='flex flex-col'>
+          <TweetBox/>
+
+        </div>
       </div>
       <div className="flex-none w-2/6 h-screen">
       </div>
