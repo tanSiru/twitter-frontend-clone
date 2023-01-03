@@ -14,6 +14,22 @@
     align-items:center;
 }
 
-.close:hover{
+.choices{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:50%;
+    border-radius: 30px;
+    color:white;
+    justify-items: center;
+    align-items:center;
+    padding-left: auto;
+}
+
+.close:hover,.choices:hover{
     background: rgba(255, 255, 255, .25) ;
 };
+
+.choicesImage{
+    padding-left: 15px;
+}
