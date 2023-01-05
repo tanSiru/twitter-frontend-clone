@@ -3,7 +3,7 @@ import { Content, Line, Profile, TextContent, TweetContent } from './TweetBox.st
 
 export default function TweetBox() {
     return (
-    <div className="mt-4">
+    <>
         <Line/>
             <Content>
                 <img src={require('../menus/images/test.jpeg')} alt="PFP" className='pfp'/>
@@ -23,7 +23,7 @@ export default function TweetBox() {
                 </TweetContent>
             </Content>
         <Line/>
-    </div>
+    </>
     
     )
 }
