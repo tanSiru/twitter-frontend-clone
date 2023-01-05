@@ -4,7 +4,7 @@ export const Content = styled.div`
     display:flex;
     flex-direction: row;
     width:100%;
-    height:100%;
+    height:96px;
     background-color: black;
 `
 
@@ -24,12 +24,13 @@ export const Profile = styled.div`
 `
 
 export const TweetContent = styled.div`
+    overflow-y: auto;
+    overflow-x: hidden;
 `
 
 export const TextContent = styled.div`
     color:white;
     margin-left:4px;
     height:100%;
-    overflow:auto;
 `
 

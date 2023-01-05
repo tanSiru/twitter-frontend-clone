@@ -3,13 +3,11 @@ import { Content, Line, Profile, TextContent, TweetContent } from './TweetBox.st
 
 export default function TweetBox() {
     return (
-    <div className="mt-4 h-fit">
+    <div className="mt-4">
         <Line/>
             <Content>
                 <img src={require('../menus/images/test.jpeg')} alt="PFP" className='pfp'/>
                 <TweetContent>
-
-
                     <Profile>
                         <div className="text-white text-md">
                             Phos 
@@ -18,10 +16,8 @@ export default function TweetBox() {
                             @phosphophy
                         </div>
                     </Profile>
-
-
                     <TextContent>
-                        saasdsaasdsaasdsaasdsaasdsaasdsaasdsaasd saasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasdsaasd
+                        saasdsaasdsaasdsaasdsaasdsaasdsaasdsaasd saasdsaasdsaasdsaasdsaasdsaasdsaasdsaasd saasdsaasdsaasdsaasdsaasdsaasdsaasdsaasd saasdsaasdsaasdsaasdsaasdsaasdsaasdsaasd 
                     </TextContent>
 
                 </TweetContent>
