@@ -1,7 +1,7 @@
 import './App.css';
 import Menu from '../src/components/menus/menus'
 import TweetBox from './components/TweetBox/TweetBox';
-import HomeBar from './components/TweetBox/HomeBar';
+import HomeBar from '../src/components/HomeBar/HomeBar';
 
 function App() {
   return (
