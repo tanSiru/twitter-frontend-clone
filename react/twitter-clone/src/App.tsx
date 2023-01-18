@@ -2,6 +2,7 @@ import './App.css';
 import Menu from '../src/components/menus/menus'
 import TweetBox from './components/TweetBox/TweetBox';
 import HomeBar from '../src/components/HomeBar/HomeBar';
+import HomeTweetBox from './components/HomeTweetBox/HomeTweetBox';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <div className='flex flex-col'>
 
           <HomeBar/>
+          <HomeTweetBox/>
           <TweetBox/>
 
         </div>

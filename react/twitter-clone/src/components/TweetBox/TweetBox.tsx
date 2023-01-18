@@ -12,12 +12,12 @@ export default function TweetBox() {
                         <div className="text-white text-md">
                             Phos 
                         </div>
-                        <div  className="text-white text-sm text-gray-500">
+                        <div  className="text-sm text-gray-500">
                             @phosphophy
                         </div>
                     </Profile>
                     <TextContent>
-                        saasdsaasdsaasdsaasdsaasdsaasdsaasdsaasd saasdsaasdsaasdsaasdsaasdsaasdsaasdsaasd saasdsaasdsaasdsaasdsaasdsaasdsaasdsaasd saasdsaasdsaasdsaasdsaasdsaasdsaasdsaasd 
+                        saasdsaasdsaasdsaasdsaasdsaasdsaasdsaasd 
                     </TextContent>
 
                 </TweetContent>

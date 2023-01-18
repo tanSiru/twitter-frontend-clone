@@ -1,52 +1,52 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
-export const Wrapper = styled.div`
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, .1);
-    z-index: 1000;
-`
+type Props = {
+    check:boolean;
+}
 
-export const Content = styled.div`
-    position: fixed;
-    top:30%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    background-color: black;
-    padding:50px;
-    z-index:1000; 
-    color:black;
+export const Content = styled.div<Props>`
     display:flex;
     flex-direction: column;
-    border-radius: 5%;
-    width:600px;
-    height:350px;
+    width:100%;
+    /* height:200px; */
+    height:${props=>props.check ? "200px" : "150px"};
+    background-color: black;
 `
 
-export const Button = styled.button`
-    margin-top: -25px;;
-    margin-left: -25px;
-    width:30px;
-    height:30px;
-    position: absolute;
-    color:white;
-    font-size: 16px;
-    border-radius: 9999px;
-    :hover{
-        background: rgba(255, 255, 255, .25) 
-    }
-    justify-items: center;
-    align-items:center;
+
+export const Line = styled.hr`
+    background-color: green;
+    height:1px;
+    width: 100%;
+    border-top: 1px solid gray;
+    line-height: 3px;
+`
+export const Line2 = styled.hr`
+    background-color: green;
+    height:1px;
+    width: 100%;
+    border-top: 1px solid gray;
+    line-height: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 `
 
 export const Profile = styled.img`
     clip-path: circle();
     width:55px;
     height:55px;
-    margin-left:-30px;
+    margin-left:5px;
+`
+
+export const TweetContent = styled.div`
+    overflow-y: auto;
+    overflow-x: hidden;
+`
+
+export const TextContent = styled.div`
+    color:white;
+    margin-left:4px;
+    height:100%;
 `
 
 export const ProfileStuff = styled.div`
@@ -58,7 +58,7 @@ export const Audience = styled.div`
     display: flex;
     flex-direction: row;
     margin-left:5px;
-    width:125px;
+    width:135px;
     height:35px;
     border-radius: 9999px;
     color:lightblue;
@@ -71,15 +71,18 @@ export const Audience = styled.div`
     vertical-align: middle;
     line-height: 25px;    
     padding-left:20px;
+    margin-top: 10px;
     :hover{
         background: rgba(255, 255, 255, .25) 
     }
 `
 
-export const TweetBox = styled.form`
-    margin-left:30px;
-    width:100%;
+export const TweetBox = styled.form<Props>`
+    margin-top:${props=>props.check ? "0px" : "-40px"};
+    margin-left:70px;
+    width:90%;
     height:150px;
+    background-color:transparent;
 `
 
 export const Input = styled.textarea`
@@ -104,6 +107,8 @@ export const Options =  styled.div`
     height:  120px;
     padding-bottom: -15px;
     flex-shrink:2;
+    margin-left: 65px;
+    margin-bottom:5px;
 `
 
 export const Reply = styled.div`
@@ -118,13 +123,6 @@ export const Reply = styled.div`
     :hover{
         background-color: rgba(255,255,255,0.25);
     }
-`
-
-export const Line = styled.hr`
-    height: 1px;
-    margin-top:10px;
-    margin-bottom:10px;
-    background: black;
 `
 
 export const Media = styled.div`
@@ -179,3 +177,5 @@ export const Media = styled.div`
         border-radius:9999px;
     }
 `
+
+
