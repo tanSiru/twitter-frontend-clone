@@ -1,7 +1,11 @@
-import React from 'react'
+import {SearchBar, Wrapper} from './bar.styles'
 
 export default function bar() {
   return (
-    <div>bar</div>
+    <Wrapper>
+      <SearchBar>
+  
+      </SearchBar>
+    </Wrapper>
   )
 }

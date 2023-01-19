@@ -8,7 +8,6 @@ export const Content = styled.div<Props>`
     display:flex;
     flex-direction: column;
     width:100%;
-    /* height:200px; */
     height:${props=>props.check ? "200px" : "150px"};
     background-color: black;
 `
@@ -29,6 +28,9 @@ export const Line2 = styled.hr`
     line-height: 3px;
     margin-top: 10px;
     margin-bottom: 10px;
+    @media screen and (max-width:1450px){
+        width:75%;
+        }
 `
 
 export const Profile = styled.img`
@@ -82,6 +84,9 @@ export const TweetBox = styled.form<Props>`
     margin-left:70px;
     width:90%;
     height:150px;
+    @media screen and (max-width:1450px){
+        width:85%;
+        }
     background-color:transparent;
 `
 
@@ -166,6 +171,9 @@ export const Media = styled.div`
         text-align: center;
         padding-bottom: 2px;
         margin-left:auto;
+        @media screen and (max-width:1450px){
+            margin-left:35px;
+        }
         margin-top: 7px;
         width:120px;
         height:35px;
