@@ -3,7 +3,7 @@ import Menu from '../src/components/menus/menus'
 import TweetBox from './components/TweetBox/TweetBox';
 import HomeBar from '../src/components/HomeBar/HomeBar';
 import HomeTweetBox from './components/HomeTweetBox/HomeTweetBox';
-import Bar from './components/right-bar/bar'
+import Bar from './components/right-bar/bar';
 
 function App() {
   return (
@@ -25,8 +25,8 @@ function App() {
 
         </div>
       </div>
-      <div className="flex-none w-2/6 h-screen">
-      <Bar/>
+      <div className="flex w-2/6 h-screen flex-col  items-center">
+        <Bar/>
       </div>
     </div>
   );
