@@ -5,9 +5,67 @@ export default function bar() {
     <Wrapper>
       <SearchBar/>
       
-
-
       <Happening>
+        <div className="whatshappening">
+              Whats Happening
+        </div>
+
+      <div className="event">
+        <div className="content">
+          <div className="trending">
+              Trending
+          </div>
+          <div className="news">
+              Persona 1
+          </div>
+        </div>
+        
+      </div>
+
+      <div className="event">
+        <div className="content">
+          <div className="trending">
+              Trending
+          </div>
+          <div className="news">
+              Persona 2
+          </div>
+        </div>
+      </div>
+
+
+      <div className="event">
+        <div className="content">
+          <div className="trending">
+              Trending
+          </div>
+          <div className="news">
+              Persona 3
+          </div>
+        </div>
+      </div>
+
+      <div className="event">
+        <div className="content">
+          <div className="trending">
+              Trending
+          </div>
+          <div className="news">
+              Persona 4
+          </div>
+        </div>
+      </div>
+
+      <div className="event">
+        <div className="content">
+          <div className="trending">
+              Trending
+          </div>
+          <div className="news">
+              Persona 5
+          </div>
+        </div>
+      </div>
         
       </Happening>
 
@@ -17,7 +75,7 @@ export default function bar() {
         </div>
 
         <div className="suggested">
-            <Profile src={require('../menus/images/test.jpeg')}/>
+            <Profile src={require('../images/test.jpeg')}/>
             <div className="profile">
               <div className="username">
                 Phos
@@ -33,7 +91,7 @@ export default function bar() {
 
 
         <div className="suggested">
-            <Profile src={require('../menus/images/test.jpeg')}/>
+            <Profile src={require('../images/test.jpeg')}/>
             <div className="profile">
               <div className="username">
                 Phos
@@ -49,7 +107,7 @@ export default function bar() {
 
 
         <div className="suggested">
-            <Profile src={require('../menus/images/test.jpeg')}/>
+            <Profile src={require('../images/test.jpeg')}/>
             <div className="profile">
               <div className="username">
                 Phos

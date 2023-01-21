@@ -32,19 +32,19 @@ export default function Options({onClose}:Props) {
         </div>
 
         <div className="choices" onClick={makePublic}>
-          <img src={require('../../menus/images/earth.png')} alt="EVERYONE" width={width} height={height} className="pl-4"/>
+          <img src={require('../../images/earth.png')} alt="EVERYONE" width={width} height={height} className="pl-4"/>
             <div className="pl-4">
               Everyone
             </div>
-            {isPublic && <img src={require('../../menus/images/tick.png')} alt="CHECK" width={width} height={height} className="pl-4"/>}
+            {isPublic && <img src={require('../../images/tick.png')} alt="CHECK" width={width} height={height} className="pl-4"/>}
         </div>
 
         <div className="choices" onClick={makePrivate}>
-          <img src={require('../../menus/images/profile.png')} alt="PROFILE" width={width} height={height} className="pl-4"/>
+          <img src={require('../../images/profile.png')} alt="PROFILE" width={width} height={height} className="pl-4"/>
             <div className="pl-4">
               Twitter Circle
             </div>
-            {isPrivate && <img src={require('../../menus/images/tick.png')} alt="CHECK" width={width} height={height} className="pl-4"/>}
+            {isPrivate && <img src={require('../../images/tick.png')} alt="CHECK" width={width} height={height} className="pl-4"/>}
         </div>
     </div>
   )

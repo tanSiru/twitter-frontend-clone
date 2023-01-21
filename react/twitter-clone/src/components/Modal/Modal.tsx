@@ -28,10 +28,10 @@ export default function Modal({tweet,onClose}:any) {
         <Content>
             <Button onClick={()=>close()}>X</Button>
             <ProfileStuff>
-                <Profile src={require('../menus/images/test.jpeg')} />
+                <Profile src={require('../images/test.jpeg')} />
                 <Audience onClick={isEveryone===false ? ()=> setIsEveryone(true) :()=> setIsEveryone(false)}>
                     Everyone
-                    <img src={require('../menus/images/downarrow.png')} alt="down arrow" width="10" height="10"/>
+                    <img src={require('../images/downarrow.png')} alt="down arrow" width="10" height="10"/>
                     
                 </Audience>
             </ProfileStuff>
@@ -41,15 +41,15 @@ export default function Modal({tweet,onClose}:any) {
             <Options>
                 <Reply>
                     Everyone
-                    <img src={require('../menus/images/earth2.png') } alt="earth" width="35" height="1" className='pl-2'/>
+                    <img src={require('../images/earth2.png') } alt="earth" width="35" height="1" className='pl-2'/>
                 </Reply>
                 <Line/>
                 <Media>
-                    <img src={require('../menus/images/image.png') } alt="" className="image"/>
-                    <img src={require('../menus/images/gif.png') } alt="GIF" className="gif"/>
-                    <img src={require('../menus/images/dots2.png') } alt="DOTS"  className="dots"/>
-                    <img src={require('../menus/images/emoji.png') } alt="EMOJI" className="emoji"/>
-                    <img src={require('../menus/images/calender.png') } alt="CALENDER" className="calender"/>
+                    <img src={require('../images/image.png') } alt="" className="image"/>
+                    <img src={require('../images/gif.png') } alt="GIF" className="gif"/>
+                    <img src={require('../images/dots2.png') } alt="DOTS"  className="dots"/>
+                    <img src={require('../images/emoji.png') } alt="EMOJI" className="emoji"/>
+                    <img src={require('../images/calender.png') } alt="CALENDER" className="calender"/>
                     <div className="tweet">
                         Tweet
                     </div>

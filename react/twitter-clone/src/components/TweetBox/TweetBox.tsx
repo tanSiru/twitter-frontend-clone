@@ -6,7 +6,7 @@ export default function TweetBox() {
     <>
         <Line/>
             <Content>
-                <img src={require('../menus/images/test.jpeg')} alt="PFP" className='pfp'/>
+                <img src={require('../images/test.jpeg')} alt="PFP" className='pfp'/>
                 <TweetContent>
                     <Profile>
                         <div className="text-white text-md">

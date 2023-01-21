@@ -29,8 +29,10 @@ export const Suggest = styled.div`
     margin-top:50px;
     background-color:#15181c;
     border-radius:10px;
-    
-    
+    border-color:white;
+    border-style: solid;
+    border-width:1px;
+
 
     .youmightlike{
         font-weight: bold;
@@ -92,7 +94,48 @@ export const Happening = styled.div`
     margin-top:50px;
     background-color:#15181c;
     border-radius:10px;
+    border-color:white;
+    border-style: solid;
+    border-width:1px;
 
-    .event{}
+    .whatshappening{
+        font-weight: bold;
+        margin-top:5px;
+        padding-left:5px;
+        font-size:20px;
+        color:white;
+    }
+
+    .event{
+        width:100%;
+        height:65px;
+        display:flex;
+        flex-direction: row;
+        background:#15181c;
+        align-items:center;
+        :hover{
+            background:rgb(199, 203, 209);
+            opacity:0.75;
+        }
+
+        .content{
+            display: flex;
+            flex-direction:column;
+            margin-left:15px;
+            .trending{
+                font-size:13px;
+                color:darkgray;
+            }
+
+
+            .news{
+                font-size:18px;
+                color:white;
+                margin-top:-5px;
+                font-weight:bold;
+            }
+        }
+
+    }
 
 `

@@ -6,7 +6,7 @@ export default function HomeBar() {
         <div id="home">
             Home
         </div>
-        <img src={require('../menus/images/home.png')} alt="HOME"/>
+        <img src={require('../images/home.png')} alt="HOME"/>
     </Wrapper>
     )
 }
