@@ -11,14 +11,22 @@
 .left-line{
   border-left: 1px solid white;
   display:black;
-  height:100vh;
+  height:100%;
   width:1px;
   float:right;
 }
 .right-line{
   border-left: 1px solid white;
   display:black;
-  height:100vh;
+  height:100%;
   width:1px;
   float:left;
+}
+
+.middle{
+  margin-left:30%;
+}
+
+.right{
+  margin-left:65%;
 }

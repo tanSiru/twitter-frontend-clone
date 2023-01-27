@@ -40,10 +40,6 @@ export const Profile = styled.img`
     margin-left:5px;
 `
 
-export const TweetContent = styled.div`
-    overflow-y: auto;
-    overflow-x: hidden;
-`
 
 export const TextContent = styled.div`
     color:white;
