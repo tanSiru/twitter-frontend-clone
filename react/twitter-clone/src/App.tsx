@@ -14,8 +14,8 @@ function App() {
       
       <div className="flex-none w-2/6 h-screen middle">
 
-        <span className="left-line"/>
-        <span className="right-line"/>
+        // <span className="left-line"/>
+        // <span className="right-line"/>
         <div className='flex flex-col'>
 
           <HomeBar/>

@@ -2,6 +2,8 @@ import './menus.css';
 import {useState} from 'react';
 import Dropdown from '../Dropdown/Dropdown'
 import Modal from '../Modal/Modal'
+import {useNavigate} from 'react-router-dom';
+
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 interface Props{
@@ -12,6 +14,7 @@ interface Props{
 const Menus = () => {
     const width = "30";
     const height = "30";
+    const navigate = useNavigate();
 
     const [isOpen,setIsOpen] = useState(false);
     const [isTweet,setIsTweet] = useState(false);
@@ -37,7 +40,7 @@ const Menus = () => {
         </div>
 
 
-        <div className="text-white my-3 ml-28 w-44">
+        <div className="text-white my-3 ml-28 w-44" onClick={()=>navigate('/explore')}>
             <div className="flex flex-row">
                 <button className="flex items-center hover:bg-grey-300 hover:opacity-25 rounded-md" onClick={()=>console.log("explore")}>
                     <img src={require("../images/hashtag.png")} alt="Explore" width={width} height={height}/>
