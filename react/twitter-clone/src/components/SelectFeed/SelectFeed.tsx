@@ -1,4 +1,3 @@
-import React from 'react'
 import { Wrapper, Feed } from './SelectFeed.styles'
 
 export default function SelectFeed() {
@@ -12,7 +11,7 @@ export default function SelectFeed() {
       <Feed>
         Trending
       </Feed>
-      
+    
     </Wrapper>
   )
 }

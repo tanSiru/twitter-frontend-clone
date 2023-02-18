@@ -3,6 +3,9 @@ import Menu from '../../components/menus/menus'
 import Bar from '../../components/right-bar/bar';
 import SearchBar from '../../components/SearchBar/SearchBar';
 import SelectFeed from '../../components/SelectFeed/SelectFeed';
+import Trending from '../../components/Trending/trending';
+
+
 
 export default function explore() {
   return (
@@ -16,9 +19,10 @@ export default function explore() {
 
       <span className="left-line"/>
       <span className="right-line"/>
-      <div className='flex flex-col'>
+      <div className='flex flex-col align-middle'>
         <SearchBar/>
         <SelectFeed/>
+        <Trending/>
       </div>
     </div>
     <div className="flex w-2/6 h-screen flex-col  items-center fixed float-right right">

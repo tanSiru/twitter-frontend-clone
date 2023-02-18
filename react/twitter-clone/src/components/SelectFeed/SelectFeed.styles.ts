@@ -19,3 +19,12 @@ export const Feed  = styled.div`
     align-items: center;
     justify-content: center;
 `;
+
+
+export const Line = styled.hr`
+    height:1px;
+    width:100%;
+    border: 1px solid red;
+    position:absolute;
+    bottom:0;
+`
