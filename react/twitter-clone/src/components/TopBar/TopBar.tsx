@@ -1,10 +1,14 @@
-import { Wrapper } from './HomeBar.styles'
+import { Wrapper } from './TopBar.styles'
 
-export default function HomeBar() {
+type Props = {
+    text:string;
+}
+
+export default function HomeBar({text}:Props) {
     return (
     <Wrapper>
         <div id="home">
-            Home
+            {text}
         </div>
         <img src={require('../images/home.png')} alt="HOME"/>
     </Wrapper>

@@ -1,6 +1,6 @@
 import './App.css';
 import Menu from '../src/components/menus/menus'
-import HomeBar from '../src/components/HomeBar/HomeBar';
+import HomeBar from './components/TopBar/TopBar';
 import Bar from './components/right-bar/bar';
 import Tweet from './components/Tweets/tweets'
 
@@ -14,11 +14,11 @@ function App() {
       
       <div className="flex-none w-2/6 h-screen middle">
 
-        // <span className="left-line"/>
-        // <span className="right-line"/>
+        <span className="left-line"/>
+        <span className="right-line"/>
         <div className='flex flex-col'>
 
-          <HomeBar/>
+          <HomeBar text="Home"/>
           <Tweet/>
 
         </div>

@@ -50,7 +50,7 @@ const Menus = () => {
         </div>
 
         
-        <div className="text-white my-3 ml-28 w-44">
+        <div className="text-white my-3 ml-28 w-44" onClick={()=>navigate('/notifications')}>
                 <div className="flex flex-row">
                     <button onClick={()=>console.log("bell")} className="flex items-center hover:bg-red-300  rounded-md">
                         <img src={require("../images/bell.png")} alt="Notifications" width={width} height={height}/>
@@ -60,7 +60,7 @@ const Menus = () => {
         </div>
 
 
-        <div className="text-white my-3 ml-28 w-44">
+        <div className="text-white my-3 ml-28 w-44" onClick={()=>navigate('/messages')}>
             <div className="flex flex-row">
                 <button className="flex items-center hover:bg-red-300  rounded-md" onClick={()=>console.log("messages")}>
                     <img src={require("../images/message.png")} alt="Messages" width={width} height={height}/>
@@ -70,7 +70,7 @@ const Menus = () => {
         </div>
 
 
-        <div className="text-white my-3 ml-28 w-44">
+        <div className="text-white my-3 ml-28 w-44" onClick={()=>navigate('/bookmarks')}>
             <div className="flex flex-row">
                 <button className="flex items-center hover:bg-red-300  rounded-md" onClick={()=>console.log("Bookmarks")}>
                     <img src={require("../images/bookmarks.png")} alt="Bookmarks" width={width} height={height}/>
@@ -81,7 +81,7 @@ const Menus = () => {
         </div>
 
 
-        <div className="text-white my-3 ml-28 w-44">
+        <div className="text-white my-3 ml-28 w-44" onClick={()=>navigate('/profile')}>
             <div className="flex flex-row">
                 <button className="flex items-center hover:bg-red-300  rounded-md" onClick={()=>console.log("Profile")}>
                     <img src={require("../images/profile.png")} alt="Profile" width={width} height={height}/>
@@ -90,7 +90,7 @@ const Menus = () => {
             </div>
         </div>
 
-        <div className="text-white my-3 ml-28 w-44" >
+        <div className="text-white my-3 ml-28 w-44" onClick={()=>navigate('/more')}>
             <div className="flex flex-row">
                 <button className="flex items-center hover:bg-red-300  rounded-md" onClick={()=>setIsOpen(!isOpen)}>
                     <img src={require("../images/dots.png")} alt="More" width={width} height={height}/>

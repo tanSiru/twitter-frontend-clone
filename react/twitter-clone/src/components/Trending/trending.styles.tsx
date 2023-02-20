@@ -47,6 +47,7 @@ export const Event = styled.div`
     }
 
     .details{
+        font-weight:normal;
         font-size:15px;
         color:gray;
     }
