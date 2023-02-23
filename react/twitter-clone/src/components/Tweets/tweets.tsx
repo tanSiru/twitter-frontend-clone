@@ -8,7 +8,8 @@ const tweets:any = []
 for(let i = 0;i<41;i++){
   let tweet = {
     "user":randomSentence({words: 1}),
-    "tweets":randomSentence({min: 4, max: 9})
+    "content":randomSentence({min: 4, max: 9}),
+    "handler":randomSentence({words: 1}),
   }
   tweets.push(tweet)
 }
@@ -19,40 +20,7 @@ export default function Tweets() {
     <div>
       <HomeTweetBox/>
       
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
-      <TweetBox/>
+      {tweets.map((user:any)=><TweetBox user={user.user} content={user.content} handler={user.handler}/>)}
 
     </div>
   )
