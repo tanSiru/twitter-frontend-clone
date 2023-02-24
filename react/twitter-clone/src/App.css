@@ -11,14 +11,14 @@
 .left-line{
   border-left: 1px solid white;
   display:black;
-  height:200%;
+  height:100%;
   width:1px;
   float:right;
 }
 .right-line{
   border-left: 1px solid white;
   display:black;
-  height:200%;
+  height:100%;
   width:1px;
   float:left;
 }

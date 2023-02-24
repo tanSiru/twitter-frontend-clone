@@ -20,7 +20,7 @@ export default function HomeTweetBox() {
                         
                     </Audience>}
                 </ProfileStuff>
-            <TweetBox check={isLine} onClick={()=>setIsLine(true)}>
+            <TweetBox check={isLine} onClick={()=>setIsLine(true)} >
                 <Input placeholder="type something"/>
             </TweetBox>
             <Options>

@@ -5,7 +5,9 @@ export const Content = styled.div`
     flex-direction: row;
     width:100%;
     height:96px;
+    /* height:auto; */
     background-color: black;
+    border: 1px solid grey;
 `
 
 export const Line = styled.hr`
@@ -24,7 +26,7 @@ export const Profile = styled.div`
 `
 
 export const TweetContent = styled.div`
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
 `
 
@@ -38,13 +40,13 @@ export const LeftLine = styled.div`
     display:black;
     height:100%;
     width:1px;
-    float:right;
+    float:left;
 `
 
 export const RightLine = styled.div`
-    border-left: 1px solid white;
+    border-right: 1px solid white;
     display:black;
     height:100%;
     width:1px;
-    float:left;
+    float:right;
 `
