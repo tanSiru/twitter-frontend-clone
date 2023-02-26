@@ -1,5 +1,6 @@
 import HomeTweetBox from "../HomeTweetBox/HomeTweetBox";
 import TweetBox from '../TweetBox/TweetBox'
+import {useState} from 'react';
 var randomSentence = require('random-sentence');
 
 
@@ -9,8 +10,8 @@ type Props = {
     handler:string;
 }
 
-export default function Tweets() {
-    const tweets:any = []
+
+const tweets:any = []
 
     for(let i = 0;i<41;i++){
         let tweet = {
@@ -21,24 +22,31 @@ export default function Tweets() {
         tweets.push(tweet)
     }
 
+export default function Tweets() {
+
+    const [tweet,setTweet] = useState(tweets);
+    
+
     function addTweet({user,content,handler}:Props){
 
-      let tweet = {
+      let temp = {
           "user":user,
           "content":content,
           "handler":handler,
       }
-  
-      tweets.push(tweet)
+      
+
+      setTweet(tweet.push(temp))
+      console.log(tweet)
   
   }
 
   console.log(tweets)
   return (
     <div>
-      <HomeTweetBox add={addTweet}/>
+      <HomeTweetBox addTweet={()=>addTweet()}/>
       
-      {tweets.map((user:any)=><TweetBox user={user.user} content={user.content} handler={user.handler}/>)}
+      {tweets.map((user:any,index:any)=><TweetBox  key ={index} user={user.user} content={user.content} handler={user.handler}/>)}
 
     </div>
   )

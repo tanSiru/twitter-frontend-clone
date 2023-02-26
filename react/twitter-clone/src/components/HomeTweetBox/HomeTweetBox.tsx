@@ -2,10 +2,19 @@ import {  Audience, Content, Input, Line, Line2, Media, Options, Profile, Profil
 import {useState} from 'react';
 import Everyone from './Options/Options' 
 
+type Props={
+    addTweet:Function;
+}
 
-export default function HomeTweetBox() {
+
+export default function HomeTweetBox({addTweet}:Props) {
     const [isEveryone,setIsEveryone] = useState(false);
     const [isLine,setIsLine] = useState(false);
+    const [text,setText] = useState('')
+
+    function handleChange(event:any) {
+        setText(event.target.value)
+    }
 
 
     return (
@@ -21,7 +30,7 @@ export default function HomeTweetBox() {
                     </Audience>}
                 </ProfileStuff>
             <TweetBox check={isLine} onClick={()=>setIsLine(true)} >
-                <Input placeholder="type something"/>
+                <Input  value={text} onChange={(event)=>handleChange}/>
             </TweetBox>
             <Options>
                 {isLine && <Reply>
@@ -35,9 +44,9 @@ export default function HomeTweetBox() {
                     <img src={require('../images/dots2.png') } alt="DOTS"  className="dots"/>
                     <img src={require('../images/emoji.png') } alt="EMOJI" className="emoji"/>
                     <img src={require('../images/calender.png') } alt="CALENDER" className="calender"/>
-                    <div className="tweet">
+                    <button className="tweet" onClick={addTweet('tsubasa','hanekawa','I dont know everything, I just know what I know.')}>
                         Tweet
-                    </div>
+                    </button>
 
                 </Media>
 
