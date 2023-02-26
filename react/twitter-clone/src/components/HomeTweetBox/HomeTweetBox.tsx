@@ -30,7 +30,7 @@ export default function HomeTweetBox({addTweet}:Props) {
                     </Audience>}
                 </ProfileStuff>
             <TweetBox check={isLine} onClick={()=>setIsLine(true)} >
-                <Input  value={text} onChange={(event)=>handleChange}/>
+                <Input placeholder="What's up?" value={text} onChange={handleChange}/>
             </TweetBox>
             <Options>
                 {isLine && <Reply>
@@ -44,7 +44,7 @@ export default function HomeTweetBox({addTweet}:Props) {
                     <img src={require('../images/dots2.png') } alt="DOTS"  className="dots"/>
                     <img src={require('../images/emoji.png') } alt="EMOJI" className="emoji"/>
                     <img src={require('../images/calender.png') } alt="CALENDER" className="calender"/>
-                    <button className="tweet" onClick={addTweet('tsubasa','hanekawa','I dont know everything, I just know what I know.')}>
+                    <button className="tweet" onClick={()=>addTweet({user:'tsubasa',handler:'hanekawa',content:text})}>
                         Tweet
                     </button>
 

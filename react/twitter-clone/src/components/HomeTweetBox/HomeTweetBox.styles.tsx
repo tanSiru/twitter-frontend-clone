@@ -76,7 +76,7 @@ export const Audience = styled.div`
 `
 
 export const TweetBox = styled.form<Props>`
-    margin-top:${props=>props.check ? "0px" : "-40px"};
+    margin-top:${props=>props.check ? "0px" : "-50px"};
     margin-left:70px;
     width:90%;
     height:150px;
@@ -86,7 +86,7 @@ export const TweetBox = styled.form<Props>`
     background-color:transparent;
 `
 
-export const Input = styled.textarea`
+export const Input = styled.input.attrs({type:"text"})`
     border-width: 0;
     background-color: black;
     :focus{

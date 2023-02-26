@@ -36,17 +36,17 @@ export default function Tweets() {
       }
       
 
-      setTweet(tweet.push(temp))
-      console.log(tweet)
+      setTweet([temp,...tweet])
+      console.log({user,content,handler})
   
   }
 
   console.log(tweets)
   return (
     <div>
-      <HomeTweetBox addTweet={()=>addTweet()}/>
+      <HomeTweetBox addTweet={addTweet}/>
       
-      {tweets.map((user:any,index:any)=><TweetBox  key ={index} user={user.user} content={user.content} handler={user.handler}/>)}
+      {tweet.map((user:any,index:any)=><TweetBox  key ={index} user={user.user} content={user.content} handler={user.handler}/>)}
 
     </div>
   )
