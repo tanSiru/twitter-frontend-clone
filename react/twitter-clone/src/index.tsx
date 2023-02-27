@@ -6,7 +6,7 @@ import Kaoru from './components/errorElement/errorElement'
 import App from './App';
 import Explore from './routes/explore/explore';
 import Notifications from './routes/notifications/notifications';
-import Messages from './routes/messages';
+import Messages from './routes/messages/messages';
 import Bookmarks from './routes/bookmarks';
 import Profile from './routes/profile';
 
