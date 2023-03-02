@@ -1,8 +1,9 @@
 import Menu from '../../components/menus/menus'
-import MessageUser from '../../components/messageUser/messageUser';
-import Bar from '../../components/right-bar/bar';
+import Inbox from '../../components/Inbox/Inbox'
+// import Bar from '../../components/right-bar/bar';
 import TopBar from '../../components/TopBar/TopBar';
 import { Wrapper } from './messages.style';
+import  Message  from '../../components/Message/Message';
 
 
 export default function Explore() {
@@ -21,12 +22,15 @@ export default function Explore() {
       <div className='flex flex-col align-middle'>
         <Wrapper>
           <TopBar text={"Messages"}/>
-          <MessageUser user="temp" recent="temp" handler="temp"/>
-
+          <Inbox user="temp" recent="temp" handler="temp"/>
         </Wrapper>
 
       </div>
     </div>
+
+    <div className="flex w-full h-screen flex-col  items-center">
+        <Message/>
+      </div>
 
   </div>
   )
