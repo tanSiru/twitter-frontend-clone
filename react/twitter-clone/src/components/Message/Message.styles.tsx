@@ -59,6 +59,7 @@ export const Messaging = styled.div`
     flex-direction: column;
     width:450px;
     height:450px;
+    max-height: 1000px;
     /* :hover{
         background-color: grey;
     } */
@@ -68,21 +69,31 @@ export const Messaging = styled.div`
 export const Msg = styled.div<Type>`
     width:250px;
     min-height:45px;
+    max-height: 300px;
+    height:auto;
+    overflow:auto;
     background-color: #43b4f6;
-    border-radius: 50px;
+    border-radius: 20px;
     margin-left: ${props=> props.check==="self" ? "195px" : "5px"};
     margin-top:10px;
     word-wrap: break-word;
-    justify-items: flex-start;
-    align-items: center;
     padding-left: 5px;
 `;
 
-export const Send = styled.div`
+export const SendWrapper = styled.div`
     width:450px;
-    height:60px;
-    display: flex;
-    flex-direction:row;
-    border-radius:15px;
-    background-color: red;
+    min-height:50px;
+    max-height: 300px;
+    height:auto;
+    overflow:auto;
 `;
+
+export const Send = styled.input.attrs({ type: 'text' })`
+    width:450px;
+    height:50px;
+    border-radius:15px;
+    background-color: #212328;
+    padding:8px;
+`;
+
+export const Form  = styled.form``

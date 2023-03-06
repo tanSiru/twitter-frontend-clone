@@ -1,4 +1,5 @@
-import {Wrapper,  Display, Info, Pfp, Text, Messaging, Msg,Send} from './Message.styles'
+import {Wrapper,  Display, Info, Pfp, Text, Messaging, Msg,Send, Form} from './Message.styles'
+import {useState} from 'react'
 
 /*
 Msg data structure:
@@ -17,12 +18,31 @@ type MsgProps={
 
 var MessageData = [
   {"phos":[
-    {"msg":"test message","person":"self"},
+    {"msg":"oiasjdiiadiaaisdasioahsashdasiohihsaiosh[idaisoihasiohasoidhas[oidhasdahsd]]","person":"self"},
     {"msg":"test message","person":"other"},
   ]}
 ]
 
 export default function Message() {
+  const [data,setData] = useState(MessageData[0]["phos"]);
+  const [text,setText] = useState('')
+
+  function addMessage(msg:string){
+    let temp = {"msg":msg,"person":"self"}
+    setData([...data,temp])
+    console.log(data)
+  }
+
+  function handleChange(e:any){
+    setText(e.target.value)
+  }
+
+  function handleSubmit(e:any){
+    addMessage(text)
+    setText('');
+    e.preventDefault();
+  }
+
   return (
     <Wrapper>
       <Display>
@@ -38,12 +58,17 @@ export default function Message() {
         </Info>
 
         <Messaging>
-          {MessageData[0]["phos"].map((msg:MsgProps)=><Msg check={msg["person"]}>{msg["msg"]}</Msg>)}
+          {data.map((msg:MsgProps)=><Msg check={msg["person"]}>{msg["msg"]}</Msg>)}
         </Messaging>
 
-        <Send>
+        <Form onSubmit={handleSubmit}>
+
+          <Send value={text} onChange={handleChange}/>
+
+        </Form>
+
           
-        </Send>
+    
       </Display>
       
     </Wrapper>
