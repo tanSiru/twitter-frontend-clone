@@ -4,8 +4,10 @@ export const Content = styled.div`
     display:flex;
     flex-direction: row;
     width:100%;
-    height:96px;
-    /* height:auto; */
+    min-height:90px;
+    max-height:525px;
+    height:auto;
+    overflow:auto;
     background-color: black;
     border: 1px solid grey;
 `
@@ -26,14 +28,18 @@ export const Profile = styled.div`
 `
 
 export const TweetContent = styled.div`
-    overflow-y: hidden;
     overflow-x: hidden;
 `
 
 export const TextContent = styled.div`
     color:white;
     margin-left:4px;
-    height:100%;
+    width:100%;
+    /* min-height:70px;
+    max-height:500px; */
+    height:auto;
+    overflow:auto;
+    word-wrap: break-word;
 `
 export const LeftLine = styled.div`
     border-left: 1px solid white;

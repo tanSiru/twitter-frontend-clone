@@ -1,9 +1,9 @@
 import './styles.css'
-import { Content,LeftLine,Line,Profile,RightLine,TextContent,TweetContent} from './TweetBox.styles';
+import { Content,Line,Profile,TextContent,TweetContent} from './TweetBox.styles';
 
 type Props = {
     user:string;
-    content:string;
+    content:any;
     handler:string;
 }
 
@@ -12,8 +12,6 @@ export default function TweetBox({user,content,handler}:Props) {
     <>
         <Line/>
         <Content>
-        {/* <LeftLine/>
-        <RightLine/> */}
             <img src={require('../images/test.jpeg')} alt="PFP" className='pfp'/>
             <TweetContent>
                 <Profile>

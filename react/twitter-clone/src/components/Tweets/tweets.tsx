@@ -45,7 +45,6 @@ export default function Tweets() {
   return (
     <div>
       <HomeTweetBox addTweet={addTweet}/>
-      
       {tweet.map((user:any,index:any)=><TweetBox  key ={index} user={user.user} content={user.content} handler={user.handler}/>)}
 
     </div>

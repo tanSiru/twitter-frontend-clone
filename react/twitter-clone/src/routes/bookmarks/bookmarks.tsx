@@ -12,7 +12,7 @@ export default function Explore() {
         <Menu/>
     </div>
     
-    <div className="flex-none w-1/4 h-screen middle">
+    <div className="flex-none w-1/3 h-screen middle">
 
       <span className="left-line"/>
       <span className="right-line"/>
