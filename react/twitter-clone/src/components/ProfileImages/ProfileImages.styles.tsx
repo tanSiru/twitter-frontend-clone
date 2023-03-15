@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
     width:100%;
-    height:150px;
+    height:70%;
     display:flex;
     flex-direction:column;
 `;
@@ -19,9 +19,21 @@ export const Banner = styled.img`
     overflow:hidden;
 `;
 
-export const ProfileStuff = styled.div``;
+export const ProfileStuff = styled.div`
+    display: flex;
+    flex-direction:row;
+    width:100%;
+    height:30%;
+    position: relative;
+    top:-50px;
+    margin-left:15px;
+`;
 
-export const ProfilePic = styled.div``;
+export const ProfilePic = styled.img`
+    clip-path: circle();
+    width:100px;
+    height:100px;
+`;
 
 export const Edit = styled.div``;
 
