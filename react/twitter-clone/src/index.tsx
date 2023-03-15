@@ -8,7 +8,7 @@ import Explore from './routes/explore/explore';
 import Notifications from './routes/notifications/notifications';
 import Messages from './routes/messages/messages';
 import Bookmarks from './routes/bookmarks/bookmarks';
-import Profile from './routes/profile';
+import Profile from './routes/profile/profile';
 
 const router =  createBrowserRouter([
   {
