@@ -1,5 +1,5 @@
 import TweetBox from '../TweetBox/TweetBox'
-import {Content, Wrapper} from './Bookmark.styles'
+import {Content, Img, Wrapper} from './Bookmark.styles'
 
 
 export default function Bookmark() {
@@ -7,7 +7,7 @@ export default function Bookmark() {
   return (
     <Wrapper>
         <Content>
-          <TweetBox key ="key" user="user" content={<img src={require('../images/test.jpeg')}/>} handler="{user.handler}"/>
+          <TweetBox key ="key" user="user" content={<Img src={require('../images/test.jpeg')} alt="content"/>} handler="{user.handler}"/>
         </Content>
     </Wrapper>
   )

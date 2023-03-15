@@ -53,3 +53,11 @@ export const RightLine = styled.div`
     width:1px;
     float:right;
 `
+
+export const Img = styled.img`
+    /* transform: scale(0.9, 0.9); */
+    width:95%;
+    height:95%;
+    object-fit: contain;
+    margin-bottom: 15px;
+`
