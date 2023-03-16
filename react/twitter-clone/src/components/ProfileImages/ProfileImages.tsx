@@ -1,4 +1,4 @@
-import {Wrapper,Content, Banner, ProfileStuff, ProfilePic} from './ProfileImages.styles'
+import {Wrapper,Content, Banner, ProfileStuff, ProfilePic, Edit, Info, Name, Handler} from './ProfileImages.styles'
 
 export default function ProfileImages() {
     return (
@@ -9,6 +9,20 @@ export default function ProfileImages() {
         <ProfileStuff>
             <ProfilePic src={require('../images/ikkun.jpeg')} alt="pfp"/>
         </ProfileStuff>
+        <Edit>
+            Edit Profile
+        </Edit>
+        <Info>
+
+            <Name>
+                Phos
+            </Name>
+            
+            <Handler>
+            @_phosphophy
+            </Handler>
+
+        </Info>
     </Wrapper>
     )
 }
