@@ -59,7 +59,7 @@ export const Info = styled.div`
     width:100%;
     height:30%;
     padding-left:25px;
-    border-bottom: 1px solid grey;
+    /* border-bottom: 1px solid grey; */
 `;
 
 export const Name = styled.div`
