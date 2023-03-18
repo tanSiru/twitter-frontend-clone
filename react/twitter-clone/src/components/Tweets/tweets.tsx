@@ -11,7 +11,7 @@ type Props = {
 }
 
 
-const tweets:any = []
+export const tweets:any = []
 
     for(let i = 0;i<41;i++){
         let tweet = {
